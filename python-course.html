@@ -913,62 +913,237 @@
                     ]
                 },
                 {
-                    id: 2,
-                    title: "تثبيت Python وأول برنامج",
-                    videoId: "YYXdXT2l-Gg",
-                    duration: "45 دقيقة",
-                    objectives: [
-                        "تثبيت Python على نظام التشغيل",
-                        "تثبيت محرر الأكواد المناسب",
-                        "كتابة وتنفيذ أول برنامج Python",
-                        "فهم بيئة التطوير IDLE",
-                        "استخدام سطر الأوامر لتشغيل برامج Python"
-                    ],
-                    content: `
-                        <h2><i class="fas fa-download"></i> تثبيت Python</h2>
-                        <p>
-                            لبدء البرمجة بـ Python، تحتاج أولاً إلى تثبيت مترجم Python على جهازك. يمكنك تحميل الإصدار الأخير من الموقع الرسمي:
-                        </p>
-                        <a href="https://www.python.org/downloads/" target="_blank" class="btn btn-outline">
-                            <i class="fas fa-external-link-alt"></i> موقع Python الرسمي
+    "id": 2,
+    "title": "تثبيت Python وأول برنامج",
+    "videoId": "zv1-032oCMU",
+    "duration": "60 دقيقة",
+    "objectives": [
+        "تثبيت Python على مختلف الأنظمة",
+        "استخدام محررات الأكواد الاحترافية",
+        "البرمجة عبر المتصفح بدون تثبيت",
+        "تثبيت وتشغيل بايثون على الهواتف",
+        "كتابة وتنفيذ أول برنامج Python"
+    ],
+    "content": `
+        <div class="installation-options">
+            <div class="option">
+                <h2><i class="fas fa-desktop"></i> التثبيت على الحاسوب</h2>
+                <h3>الخطوة 1: تحميل بايثون</h3>
+                <p>اذهب إلى الموقع الرسمي وحمل الإصدار المناسب:</p>
+                <a href="https://www.python.org/downloads/" target="_blank" class="btn">
+                    <i class="fas fa-download"></i> Python.org
+                </a>
+                
+                <h3>الخطوة 2: التأكد من التثبيت</h3>
+                <p>افتح الترمينال/CMD وأكتب:</p>
+                <div class="code-block">
+                    python --version
+                </div>
+                <p>يجب أن تظهر النسخة المثبتة (مثال: Python 3.11.4)</p>
+                
+                <h3>الخطوة 3: تثبيت VS Code</h3>
+                <p>المحرر الأقوى مع دعم كامل لبايثون:</p>
+                <a href="https://code.visualstudio.com/download" target="_blank" class="btn">
+                    <i class="fab fa-microsoft"></i> تنزيل Visual Studio Code
+                </a>
+                <p>بعد التثبيت، ثبّت إضافة Python من قسم Extensions</p>
+            </div>
+            
+            <div class="option">
+                <h2><i class="fas fa-mobile-alt"></i> التثبيت على الهاتف</h2>
+                <div class="app-card">
+                    <h3><i class="fab fa-android"></i> للأندرويد</h3>
+                    <p><strong>Pydroid 3</strong> - بيئة متكاملة مع حزم علمية:</p>
+                    <a href="https://play.google.com/store/apps/details?id=ru.iiec.pydroid3" target="_blank" class="btn btn-sm">
+                        <i class="fas fa-download"></i> التحميل
+                    </a>
+                </div>
+                
+                <div class="app-card">
+                    <h3><i class="fab fa-apple"></i> للآيفون</h3>
+                    <p><strong>Pythonista</strong> - محرر متقدم مع واجهات رسومية:</p>
+                    <a href="https://apps.apple.com/us/app/pythonista-3/id1085978097" target="_blank" class="btn btn-sm">
+                        <i class="fas fa-download"></i> التحميل
+                    </a>
+                </div>
+            </div>
+            
+            <div class="option">
+                <h2><i class="fas fa-cloud"></i> البرمجة عبر المتصفح</h2>
+                <div class="platforms-grid">
+                    <div class="platform">
+                        <h3>Replit</h3>
+                        <p>بيئة كاملة بميزات التعاون</p>
+                        <a href="https://replit.com/new/python3" target="_blank" class="btn btn-sm">
+                            <i class="fas fa-external-link-alt"></i> البدء الآن
                         </a>
-                        
-                        <h2><i class="fas fa-code"></i> محررات الأكواد</h2>
-                        <p>
-                            هناك العديد من محررات الأكواد التي يمكنك استخدامها لكتابة برامج Python، منها:
-                        </p>
-                        <ul>
-                            <li>Visual Studio Code (VS Code)</li>
-                            <li>PyCharm</li>
-                            <li>Sublime Text</li>
-                            <li>Atom</li>
-                        </ul>
-                        
-                        <h2><i class="fas fa-terminal"></i> سطر الأوامر</h2>
-                        <p>
-                            يمكنك تشغيل برامج Python من سطر الأوامر باستخدام الأمر:
-                        </p>
-                        <div class="code-block">
-                            python filename.py
-                        </div>
-                    `,
-                    exercises: [
-                        {
-                            type: "quiz",
-                            question: "أي من هذه المحررات مناسب لبرمجة Python؟",
-                            options: [
-                                { text: "Visual Studio Code", correct: true },
-                                { text: "Microsoft Word", correct: false },
-                                { text: "Adobe Photoshop", correct: false }
-                            ],
-                            explanation: "Visual Studio Code هو محرر أكواد متطور يدعم Python، بينما Microsoft Word وAdobe Photoshop ليسا محررات أكواد."
-                        }
-                    ],
-                    resources: [
-                        { type: "pdf", title: "دليل التثبيت (PDF)", url: "#", icon: "fas fa-file-pdf" },
-                        { type: "code", title: "أمثلة الكود", url: "#", icon: "fas fa-file-code" }
-                    ]
-                },
+                    </div>
+                    
+                    <div class="platform">
+                        <h3>Programiz</h3>
+                        <p>مترجم سريع مع أمثلة جاهزة</p>
+                        <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" class="btn btn-sm">
+                            <i class="fas fa-external-link-alt"></i> البدء الآن
+                        </a>
+                    </div>
+                    
+                    <div class="platform">
+                        <h3>PythonAnywhere</h3>
+                        <p>للمشاريع الكبيرة والويب</p>
+                        <a href="https://www.pythonanywhere.com" target="_blank" class="btn btn-sm">
+                            <i class="fas fa-external-link-alt"></i> البدء الآن
+                        </a>
+                    </div>
+                    
+                    <div class="platform">
+                        <h3>Trinket</h3>
+                        <p>مشاركة الكود بسهولة</p>
+                        <a href="https://trinket.io/python" target="_blank" class="btn btn-sm">
+                            <i class="fas fa-external-link-alt"></i> البدء الآن
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2><i class="fas fa-terminal"></i> أول برنامج بايثون</h2>
+        <p>بغض النظر عن المنصة، اكتب هذا الكود البسيط:</p>
+        <div class="code-block">
+            # أول برنامج بايثون
+            print("مرحباً بك في عالم البرمجة!")
+            print("ناتج 5 + 7 =", 5+7)
+        </div>
+        
+        <div class="platform-instructions">
+            <div class="instruction">
+                <h3><i class="fab fa-windows"></i> ويندوز</h3>
+                <p>1. افتح CMD <br>2. اذهب لمجلد المشروع <br>3. اكتب: <code>python اسم_الملف.py</code></p>
+            </div>
+            
+            <div class="instruction">
+                <h3><i class="fab fa-apple"></i> ماك</h3>
+                <p>1. افتح Terminal <br>2. اكتب: <code>python3 اسم_الملف.py</code></p>
+            </div>
+            
+            <div class="instruction">
+                <h3><i class="fas fa-mobile-alt"></i> الهواتف</h3>
+                <p>اضغط زر التشغيل (▶️) في التطبيق</p>
+            </div>
+            
+            <div class="instruction">
+                <h3><i class="fas fa-cloud"></i> الأونلاين</h3>
+                <p>اضغط زر Run/تشغيل في المنصة</p>
+            </div>
+        </div>
+        
+        <div class="comparison-table">
+            <h3><i class="fas fa-balance-scale"></i> مقارنة بين الخيارات</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>الخيار</th>
+                        <th>المميزات</th>
+                        <th>العيوب</th>
+                        <th>الملاءمة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>الحاسوب (VS Code)</td>
+                        <td>أقوى أداء، جميع المكتبات، تصحيح أخطاء متقدم</td>
+                        <td>يتطلب تثبيت، يحتاج حاسوب</td>
+                        <td>المشاريع الكبيرة، الاحترافية</td>
+                    </tr>
+                    <tr>
+                        <td>الهواتف</td>
+                        <td>التعلم أثناء التنقل، مجاني</td>
+                        <td>شاشة صغيرة، محدودية المكتبات</td>
+                        <td>المبتدئين، التمارين الصغيرة</td>
+                    </tr>
+                    <tr>
+                        <td>الأونلاين</td>
+                        <td>بدون تثبيت، يعمل على أي جهاز</td>
+                        <td>يحتاج إنترنت، محدودية الموارد</td>
+                        <td>التعلم السريع، المشاركة</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    "exercises": [
+        {
+            "type": "quiz",
+            "question": "ما الأمر الذي يظهر نسخة بايثون المثبتة؟",
+            "options": [
+                {"text": "python --version", "correct": true},
+                {"text": "python install", "correct": false},
+                {"text": "check python", "correct": false}
+            ],
+            "explanation": "الأمر الصحيح هو python --version لفحص النسخة المثبتة"
+        },
+        {
+            "type": "matching",
+            "question": "ربط المنصات مع مميزاتها",
+            "pairs": [
+                {"left": "Replit", "right": "التعاون مع الآخرين"},
+                {"left": "Programiz", "right": "أمثلة جاهزة"},
+                {"left": "Pydroid 3", "right": "تثبيت المكتبات العلمية"},
+                {"left": "VS Code", "right": "تصحيح الأخطاء المتقدم"}
+            ]
+        },
+        {
+            "type": "practice",
+            "question": "أنشئ حسابًا على Replit وأنشئ مشروع بايثون",
+            "steps": [
+                "1. انتقل إلى https://replit.com",
+                "2. سجل حسابًا جديدًا (يمكن استخدام جوجل)",
+                "3. أنشئ مشروع Python جديد",
+                "4. اكتب برنامجًا يطبع اسمك وعمرك",
+                "5. شارك الرابط مع زملائك"
+            ],
+            "validation": "تقديم رابط المشروع"
+        },
+        {
+            "type": "code",
+            "question": "أوجد الخطأ في الكود التالي:",
+            "code": "prnt('أهلاً بالعالم!')",
+            "hint": "الوظيفة الأساسية للطباعة تبدأ بحرف p",
+            "solution": "print('أهلاً بالعالم!')"
+        }
+    ],
+    "resources": [
+        {
+            "type": "pdf",
+            "title": "دليل التثبيت الكامل (PDF)",
+            "url": "#",
+            "icon": "fas fa-file-pdf"
+        },
+        {
+            "type": "cheatsheet",
+            "title": "أوامر الترمينال الأساسية",
+            "url": "#",
+            "icon": "fas fa-terminal"
+        },
+        {
+            "type": "video",
+            "title": "شرح تثبيت VS Code للمبتدئين",
+            "url": "#",
+            "icon": "fab fa-youtube"
+        },
+        {
+            "type": "online",
+            "title": "مكتبة أمثلة Programiz",
+            "url": "https://www.programiz.com/python-programming/examples",
+            "icon": "fas fa-laptop-code"
+        },
+        {
+            "type": "app",
+            "title": "حزم بايثون للهواتف",
+            "url": "#",
+            "icon": "fas fa-mobile-alt"
+        }
+    ]
+},
                 {
                     id: 3,
                     title: "المتغيرات وأنواع البيانات",
